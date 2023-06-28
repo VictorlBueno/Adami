@@ -1,0 +1,246 @@
+:root { 
+    --verde: #3FB97E; 
+    --cinza: #3F3F3F;
+    --branco: #F0F0F3;
+}
+
+body {
+    background-color: #F0F0F3;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        margin-left: 150px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "resumo resumo"
+            "categorias dias"
+            "costumes dicas";
+    }
+}
+
+header {
+    box-shadow: -1px -1px 6.5368px #FFFFFF, 1px 1px 6.5368px rgba(174, 174, 192, 0.4);
+}
+
+@media screen and (min-width: 900px) {
+    .resumo {
+        grid-area: resumo;
+    }
+
+    .categorias {
+        grid-area: categorias;
+    }
+
+    .categorias {
+        grid-area: categorias;
+    }
+
+    .dias {
+        grid-area: dias;
+    }
+
+    .costumes {
+        grid-area: costumes;
+    }
+
+    .dicas {
+        grid-area: dicas;
+    }
+}
+
+.menu {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #F0F0F3;
+    box-shadow: -1px -1px 6.5368px #FFFFFF, 1px 1px 6.5368px rgba(174, 174, 192, 0.4);
+    z-index: 100;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .menu {
+        left: 0px;
+        width: 150px;
+        height: 100%;
+    }
+
+    .menu-icons {
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+    }
+
+    .menu-icon {
+        width: 27px;
+        height: 27px;
+        margin: 0 10px 0 0;
+    }
+
+    .menu-icon-black {
+        filter: brightness(10%) contrast(0%);
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .icon-texto {
+        display: flex;
+        text-align: center;
+        margin: 0 0 28px 0;
+    }
+}
+
+.sombra-add {
+    border-radius: 16px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25), -1px -1px 4px rgba(255, 255, 255, 0.13);
+}
+
+.emoji-feliz, .icone-ajustes {
+    width: 24px;
+}
+
+.barra-p-fundo-h {
+    background-color: #F0F0F3;
+    width: 100%;
+    height: 16px;
+    border-radius: 11px;
+    box-shadow: inset -4.5px -4.5px 16px #FFFFFF, inset 4.5px 4.5px 16px #D0D3D7;
+}
+
+.barra-p-carregamento-h {
+    border-radius: 11px;
+    height: 16px;
+    background: linear-gradient(270deg, #3FB97E -3.99%, #71C29B 100%);
+    box-shadow: inset 0px 0px 10px #01A64E;
+}
+
+.barra-fundo-v {
+    background-color: #F0F0F3;
+    width: 84px;
+    height: 212px;
+    border-radius: 11px;
+    box-shadow: inset -4.5px -4.5px 16px #FFFFFF, inset 4.5px 4.5px 16px #D0D3D7;
+}
+
+.barra-carregamento-v {
+    border-radius: 11px;
+    width: 100%;
+}
+
+.barra-positiva {
+    background: linear-gradient(180deg, #3FB97E 0%, #4BBD86 100%);
+    box-shadow: inset 2px -4px 10px #01A64E;
+}
+
+.cem-porcento {
+    height: 100%;
+    background: linear-gradient(180deg, #DE7373 0%, #EB8282 100%);
+    box-shadow: inset 2px -4px 10px #EF5D5D;
+}
+
+.texto-verde {
+    font-size: 17px;
+    color: var(--verde);
+}
+
+.texto-cinza {
+    color: var(--cinza);
+}
+
+.texto-titulo {
+    font-size: 17px;
+    color: #757575;
+}
+
+.texto-grande {
+    font-size: 17px;
+}
+
+.texto-medio {
+    font-size: 16px;
+}
+
+.texto-medio2 {
+    font-size: 14px;
+}
+
+.texto-pequeno {
+    font-size: 12px;
+    color: #3F3F3F;
+}
+
+.icone-categoria {
+    width: 20px;
+}
+
+.barra-p-fundo-v {
+    background-color: #F0F0F3;
+    width: 16px;
+    height: 212px;
+    border-radius: 11px;
+    box-shadow: inset -4.5px -4.5px 16px #FFFFFF, inset 4.5px 4.5px 16px #D0D3D7;
+}
+
+.barra-p-carregamento-v {
+    border-radius: 11px;
+    width: 100%;
+    box-shadow: inset 5px -4px 10px #01A64E;
+}
+
+.card-costumes {
+    min-width: 170px;
+    max-width: 250px;
+    height: 68px;
+    padding: 12px 13px 12px 13px;
+    background: linear-gradient(105.41deg, #F0F0F3 0%, #EAEAEF 100%);
+    box-shadow: -1px -1px 6.5368px #FFFFFF, 4px 4px 6.5368px rgba(174, 174, 192, 0.4);
+    border-radius: 10px;
+}
+
+.check {
+    font-weight: bolder;
+    color: #01A64E
+}
+
+.card-dica {
+    background: linear-gradient(105.41deg, #F0F0F3 0%, #EAEAEF 100%);
+    box-shadow: -1px -1px 6.5368px #FFFFFF, 4px 4px 6.5368px rgba(174, 174, 192, 0.4);
+    border-radius: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.not-created {
+    cursor: not-allowed;
+}
+
+.p-grab {
+    cursor: grab;
+}
+
+.p-grab:active {
+    cursor: grabbing;
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 39px;
+    z-index: 1000;
+}

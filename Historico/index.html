@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charDez="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        
+        <title>Histórico</title>
+    </head>
+    <body>
+        <nav class="menu">
+            <h2 class="desktop-only pt-2 mt-4 ms-2 mb-4 fs-5 text">Menu</h2>
+            <div class="menu-icons d-flex justify-content-around mt-3 mb-3">
+                <a href="../Dashboard/index.html" class="text-decoration-none d-flex align-items-center">
+                    <div class="icon-texto">
+                        <img src="../icons/menu-1.svg" class="menu-icon menu-icon-black">
+                        <p class="desktop-only p-0 m-0 text-center text-dark">Dashboard</p>
+                    </div>
+                </a>
+                <div class="icon-texto d-flex align-items-center">
+                    <img src="../icons/menu-3-v.svg" class="menu-icon">
+                    <p class="desktop-only p-0 m-0 text-center texto-verde">Histórico</p>
+                </div>
+                <img src="../icons/add.svg" class="sombra-add menu-icon mobile-only">
+                <div class="icon-texto d-flex align-items-center">
+                    <img src="../icons/menu-4.svg" class="menu-icon menu-icon-black not-created">
+                    <p class="desktop-only p-0 m-0 text-center not-created">Patrimônio</p>
+                </div>
+                <div class="icon-texto d-flex align-items-center">
+                    <img src="../icons/menu-2.svg" class="menu-icon menu-icon-black not-created">
+                    <p class="desktop-only p-0 m-0 text-center not-created">Perfil</p>
+                </div>
+                <a href="../index.html" class="desktop-only p-0 m-0 text-left text-decoration-none text-secondary">↵ Sair</a>
+            </div>
+        </nav>
+
+        <header class="p-3 pt-4 pb-1 cabecalho">
+            <div class="d-flex justify-content-between align-items-center pb-2">
+                <h3 class="fs-4 text">De 01 a 30 de Dezembro <img src="../Icons/arrow down.svg" class="pointer" style="width: 30px;"></h3>
+                <img src="../icons/ajustes.svg" alt="Ajustes" class="icone-ajustes pointer mb-3">
+            </div>
+        </header>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <section class="carrossel mt-4 pt-1 dias mobile-only">
+            <div class="swiper">
+                <div class="swiper-wrapper ps-3">
+                    <div class="swiper-slide">
+                        <div class="cartao nubank">
+                            <p class="p-3 pb-0">NuBank</p>
+                            <p class="d-flex justify-content-end pt-3 pe-3">R$1.093,59</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cartao inter">
+                            <p class="p-3 pb-0">Inter</p>
+                            <p class="d-flex justify-content-end pt-3 pe-3">R$140,95</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cartao c6">
+                            <p class="p-3 pb-0">C6 Bank</p>
+                            <p class="d-flex justify-content-end pt-3 pe-3">R$30,11</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="btn-ver-todos d-flex align-items-center justify-content-center">
+                            <p>Ver<br>Todos</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="carrossel mt-4 pt-1 dias desktop-only">
+            <div class="d-flex">
+                <div class="ms-3 pe-3">
+                    <div class="cartao nubank pointer">
+                        <p class="p-3 pb-0">NuBank</p>
+                        <p class="d-flex justify-content-end pt-3 pe-3">R$1.093,59</p>
+                    </div>
+                </div>
+                <div class="pe-3">
+                    <div class="cartao inter pointer">
+                        <p class="p-3 pb-0">Inter</p>
+                        <p class="d-flex justify-content-end pt-3 pe-3">R$140,95</p>
+                    </div>
+                </div>
+                <div class="pe-3">
+                    <div class="cartao c6 pointer">
+                        <p class="p-3 pb-0">C6 Bank</p>
+                        <p class="d-flex justify-content-end pt-3 pe-3">R$30,11</p>
+                    </div>
+                </div>
+                <div class="pe-3">
+                    <div class="btn-ver-todos d-flex align-items-center justify-content-center pointer">
+                        <p>Ver<br>Todos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-3 pb-0 pt-2 totais">
+            <div class="d-flex margem-item pointer">
+                <img src="../Icons/btn-1.svg" class="me-2">
+                <div class="mt-3">
+                    <p class="m-0">Rendimentos</p>
+                    <p class="fw-bold verde h-valor">+ R$5.823,52</p>
+                </div>
+            </div>
+            <div class="d-flex pointer">
+                <img src="../Icons/btn-2.svg" class="me-2">
+                <div class="mt-3">
+                    <p class="m-0">Despesas</p>
+                    <p class="fw-bold vermelho h-valor">- R$1.330,77</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider mb-3" style="width: 95%;"></div>
+
+        <section class="me-3 ms-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h-2.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Salário</p>
+                        <p class="texto-pequeno">10 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold verde h-valor">+ R$5.400<span>,00</span></p>
+            </div>
+            <div class="divider mb-3"></div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Netflix</p>
+                        <p class="texto-pequeno">10 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold vermelho h-valor">- R$49<span>,90</span></p>
+            </div>
+            <div class="divider mb-3"></div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Padaria</p>
+                        <p class="texto-pequeno">9 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold vermelho h-valor">- R$34<span>,50</span></p>
+            </div>
+            <div class="divider mb-3"></div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Outback</p>
+                        <p class="texto-pequeno">7 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold vermelho h-valor">- R$210<span>,00</span></p>
+            </div>
+            <div class="divider mb-3"></div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Starbucks</p>
+                        <p class="texto-pequeno">7 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold vermelho h-valor">- R$16<span>,00</span></p>
+            </div>
+            <div class="divider mb-3"></div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h-2.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Dividendos</p>
+                        <p class="texto-pequeno">5 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold verde h-valor">+ R$423<span>,53</span></p>
+            </div>
+            <div class="divider mb-3"></div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                    <img src="../Icons/icon-h.svg" class="me-3 h-icon">
+                    <div>
+                        <p class="m-0 fs-5 text">Supermercado</p>
+                        <p class="texto-pequeno">2 Dez, 2020</p>
+                    </div>
+                </div>
+                <p class="fw-bold vermelho h-valor">+ R$1.016<span>,87</span></p>
+            </div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+
+        <div class="add-btn desktop-only">
+            <img src="../Icons/add-2.svg" class="pointer">
+            <p class="texto-verde text-center pointer">Adicionar</p>
+        </div>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 2,
+                slidesPerView: 1.9,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets'
+                },
+            });
+        </script>
+    </body>
+</html>

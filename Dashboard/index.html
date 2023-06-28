@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <nav class="menu">
+            <h2 class="desktop-only pt-2 mt-4 ms-2 mb-4 fs-5 text" >Menu</h2>
+            <div class="menu-icons d-flex justify-content-around mt-3 mb-3">
+                <div class="icon-texto d-flex align-items-center">
+                    <img src="../icons/menu-1-v.svg" class="menu-icon">
+                    <p class="desktop-only p-0 m-0 text-center texto-verde">Dashboard</p>
+                </div>
+                <a href="../Historico/index.html" class="text-decoration-none d-flex align-items-center">
+                    <div class="icon-texto">
+                        <img src="../icons/menu-3.svg" class="menu-icon menu-icon-black">
+                        <p class="desktop-only p-0 m-0 text-center text-dark">Histórico</p>
+                    </div>
+                </a>
+                <img src="../icons/add.svg" class="sombra-add menu-icon mobile-only">
+                <div class="icon-texto d-flex align-items-center not-created">
+                    <img src="../icons/menu-4.svg" class="menu-icon menu-icon-black">
+                    <p class="desktop-only p-0 m-0 text-center not-created">Patrimônio</p>
+                </div>
+                <div class="icon-texto d-flex align-items-center not-created">
+                    <img src="../icons/menu-2.svg" class="menu-icon menu-icon-black">
+                    <p class="desktop-only p-0 m-0 text-center not-created">Perfil</p>
+                </div>
+                <a href="../index.html" class="desktop-only p-0 m-0 text-left text-decoration-none text-secondary">↵ Sair</a>
+            </div>
+        </nav>
+
+        <header class="p-3 pt-4 pb-1 cabecalho">
+            <div class="d-flex justify-content-between align-items-center m-0">
+                <h3 class="ola-nome">Olá, Victor <img src="../icons/emoji 1.svg" alt="Emoji Feliz" class="emoji-feliz"></h3>
+                <img src="../icons/ajustes.svg" alt="Ajustes" class="icone-ajustes pointer mb-3">
+            </div>
+            <p>Você tem o saldo de <b>R$1.598,20</b> para <b>15 dias</b></p>
+        </header>
+
+        <main>
+            <section class="p-4 pb-0 mt-1 resumo">
+                <div class="d-flex justify-content-between">
+                    <p class="mb-1">Gasto médio diário</p>
+                    <p class="mb-1">R$251</p>
+                </div>
+                <div class="barra-p-fundo-h">
+                    <div class="barra-p-carregamento-h" style="width: 80%"></div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="mb-1">Gasto médio semanal</p>
+                    <p class="mb-1">R$354</p>
+                </div>
+                <div class="barra-p-fundo-h">
+                    <div class="barra-p-carregamento-h" style="width: 87%"></div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="mb-1">Gasto total em Setembro</p>
+                    <p class="mb-1">R$2.253</p>
+                </div>
+                <div class="barra-p-fundo-h">
+                    <div class="barra-p-carregamento-h" style="width: 30%"></div>
+                </div>
+            </section>
+
+            <section class="mt-4 pt-1 categorias">
+                <h2 class="texto-titulo pb-2 ps-4">Categorias</h2>
+                <div class="ps-4 d-flex d-grid gap-2">
+                    <div>
+                        <div class="barra-fundo-v d-flex align-items-end">
+                            <div class="barra-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 57%">
+                                <img src="../icons/Vector.svg" class="icone-categoria pb-1">
+                                <p class="p-0 m-0 texto-medio">R$1.145</p>
+                                <p class="p-0 m-0 texto-pequeno">Restante</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="barra-fundo-v d-flex align-items-end">
+                            <div class="barra-carregamento-v cem-porcento d-flex justify-content-end flex-column p-2 pb-4">
+                                <img src="../icons/Vector-3.svg" class="icone-categoria pb-1">
+                                <p class="p-0 m-0 texto-medio">R$0</p>
+                                <p class="p-0 m-0 texto-pequeno">Restante</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="barra-fundo-v d-flex align-items-end">
+                            <div class="barra-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 80%">
+                                <img src="../icons/Vector-1.svg" class="icone-categoria pb-1">
+                                <p class="p-0 m-0 texto-medio">R$450</p>
+                                <p class="p-0 m-0 texto-pequeno">Restante</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="barra-fundo-v d-flex align-items-end">
+                            <div class="barra-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 72%">
+                                <img src="../icons/Vector-2.svg" class="icone-categoria pb-1">
+                                <p class="p-0 m-0 texto-medio">R$910</p>
+                                <p class="p-0 m-0 texto-pequeno">Restante</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="carrossel mt-4 pt-1 dias p-grab">
+                <div class="d-flex">
+                    <h3 class="texto-titulo pb-2 ps-4">Ano</h3>
+                    <h3 class="texto-verde pb-2 ps-4">• Mês</h3>
+                    <h3 class="texto-titulo pb-2 ps-4">Semana</h3>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper ps-4">
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 97%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">01</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 80%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">02</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 97%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">03</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 95%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">04</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 93%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">05</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 75%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">06</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 95%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">07</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 97%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">08</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 90%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">09</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 85%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">10</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 96%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">11</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 99%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">12</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 94%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 92%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">14</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 94%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">15</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 98%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">16</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 95%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">17</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 94%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">18</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 96%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">19</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 98%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">20</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 90%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">21</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 94%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">22</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 84%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">23</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 97%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">24</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 95%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">25</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 96%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">26</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 92%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">27</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 97%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">28</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 91%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">29</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="barra-p-fundo-v d-flex align-items-end">
+                                <div class="barra-p-carregamento-v barra-positiva d-flex justify-content-end flex-column p-2 pb-4" style="height: 98%">
+                                </div>
+                            </div>
+                            <p class="texto-pequeno">30</p>
+                        </div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="p-4 pt-1 costumes">
+                <h2 class="texto-titulo pb-2">Costumes</h2>
+                <div class="container">
+                    <div class="row d-flex justify-content-between d-grid gap-3">
+                        <div class="card-costumes col-5 col-lg-4 col-xl-3">
+                            <p class="texto-pequeno p-0 m-0">Conta mais usada</p>
+                            <p class="texto-grande fw-bold">NuBank</p>
+                        </div>
+                        <div class="card-costumes col-5 col-lg-4 col-xl-3">
+                            <p class="texto-pequeno p-0 m-0">Dias de maior consumo</p>
+                            <p class="texto-grande fw-bold">02, 07 e 23</p>
+                        </div>
+                        <div class="card-costumes col-5 col-lg-4 col-xl-3">
+                            <p class="texto-pequeno p-0 m-0">Valor mais frequente</p>
+                            <p class="texto-grande fw-bold">R$25 ~ R$55</p>
+                        </div>
+                        <div class="card-costumes col-5 col-lg-4 col-xl-3">
+                            <p class="texto-pequeno p-0 m-0">Gasto mais frequente</p>
+                            <p class="texto-grande fw-bold">13x Loja de doces</p>
+                        </div>
+                        <div class="card-costumes col-5 col-lg-4 col-xl-3">
+                            <p class="texto-pequeno p-0 m-0">Função mais usada</p>
+                            <p class="texto-grande fw-bold">Crédito</p>
+                        </div>
+                        <div class="card-costumes col-5 col-lg-4 col-xl-3">
+                            <p class="texto-pequeno p-0 m-0">Categoria mais violada</p>
+                            <p class="texto-grande fw-bold">Entreterimento</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ps-4 pe-4 pt-1 dicas">
+                <div class="d-flex justify-content-between">
+                    <h2 class="texto-titulo pb-2">Dicas</h2>
+                    <p class="texto-pequeno text-secondary"><span class="check">✓</span> Baseado nos seus costumes</p>
+                </div>
+                <div class="card-dica p-4 pt-3">
+                    <p class="m-0 p-0 fs-2 text fw-bolder texto-cinza">1</p>
+                    <p class="m-0 p-0 mb-3 texto-medio2">A faixa de gasto mais frequênte é de valores baixos, evite gastos desnecessários não planejados.</p>
+                    <p class="m-0 p-0 fs-2 text fw-bolder texto-cinza">2</p>
+                    <p class="m-0 p-0 texto-medio2">Seu horário de maior consumo é durante o almoço, experimente levar comida prepada de casa.</p>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+        </main>
+
+        <div class="add-btn desktop-only">
+            <img src="../Icons/add-2.svg" class="pointer">
+            <p class="texto-verde text-center pointer">Adicionar</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 2,
+                slidesPerView: 21,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets'
+                },
+            });
+        </script>
+    </body>
+</html>
